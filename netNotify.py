@@ -89,7 +89,7 @@ while True:
     dest_ip = socket.inet_ntoa(iph[9])
     src_ip = socket.inet_ntoa(iph[8])
 
- if isNew(src_mac):
+    if isNew(src_mac):
         addMac(src_mac)
         if src_ip.startswith('192.168.'):
             msg = '\nNew MAC Found: ' + src_mac + '\n'
